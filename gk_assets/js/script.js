@@ -3,17 +3,17 @@ var clock;
 			$(document).ready(function() {
 
 				// Grab the current date
-				var GKDate = new Date(2020,06,07,00);
+				var currentDate = new Date();
 
-				// Set some date in the past. In this case, it's always been since Jan 1
-				var NOWDate  = new Date();
+				// Set some date in the future. In this case, it's always Jan 1
+				var futureDate  = new Date(2020, 6, 7);
 
 				// Calculate the difference in seconds between the future and current date
-				var diff = GKDate.getTime() / 1000 - NOWDate.getTime() / 1000;
+				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
 				// Instantiate a coutdown FlipClock
 				clock = $('.clock').FlipClock(diff, {
-					clockFace: 'DailyCounter'
+					clockFace: 'DailyCounter',
 					countdown: true
 				});
 			});
