@@ -280,8 +280,8 @@
         2019-6-1<span class="bull">
         ·</span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
-      <span class="post-count">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本文共2.8k字</span>
-      <span class="post-count">需要12分钟阅读</span>
+      <span class="post-count">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本文共2.9k字</span>
+      <span class="post-count">需要13分钟阅读</span>
     </header>
   </div>
 
@@ -303,7 +303,6 @@
 <pre><code>pkg install git #安装Git
 pkg install nodejs-lts #配置nodejs环境
 npm install hexo-cli -g #会有黄色的警告，可以忽略，没有影响
-npm install hexo --save #安装Hexo
 mkdir &#39;文件名&#39; #如果你是PC用户请创建在你想要的磁盘内，Termux可以直接使用该命令
 cd &#39;进入文件内&#39;
 hexo init #初始化Hexo
@@ -478,9 +477,9 @@ margin-bottom: 5px;
 }
 &lt;/style&gt;
 &lt;/div&gt;
-</code></pre><p><strong>如果你要使用，直接把两部分拼接起来就行了，这里是由于代码框问题，才分成两部分的</strong><br><br><br><strong>8.添加文章阅读时间与字数</strong><br>只针对Sakura主题，其他主题不适用<br>这里还是再出单独一篇教程好了，hhh又可以混一篇了(笑</p>
+</code></pre><p><strong>如果你要使用，直接把两部分拼接起来就行了，这里是由于代码框问题，才分成两部分的</strong><br><br><br><strong>8.添加文章阅读时间与字数</strong><br><a href="https://www.npmjs.com/package/hexo-wordcount" target="_blank" rel="noopener">https://www.npmjs.com/package/hexo-wordcount</a></p>
 <h2 id="Hexo日常使用的一些问题"><a href="#Hexo日常使用的一些问题" class="headerlink" title="Hexo日常使用的一些问题"></a>Hexo日常使用的一些问题</h2><p>可能是我个人的问题，但可能会对你有所帮助<br><strong>1.Termux报错</strong></p>
-<p><pre><code class="报错"><br>events.js:174<br></code></pre><br>在博客目录内放进了文件，导致hexo s博客无法启动，原因是hexo没有权限打开博客目录内的文件，于是乎我按照其他正常文件的权限修改为777，结果还是一样，这个玩意非常迷，与Termux的文件权限问题有关(这里我并不知道怎么解释)，可是我明明授权了Terumx的Root权限了啊?难道是我的syslock没有解?当然也不是…总是上传再clone肯定不是办法，后来我又想出了一个办法，使用cp与mv命令把其他文件拷贝到指定目录中，后来就一直用了…<br><br><br><strong>2.无法使用hexo命令</strong></p>
+<p><pre><code class="报错"><br>events.js:174<br></code></pre><br>在博客目录内放进了文件，导致hexo s博客无法启动，原因是hexo没有权限打开博客目录内的文件，于是乎我按照其他正常文件的权限修改为777，结果还是一样，这个玩意非常迷，与Termux的文件权限问题有关(这里我并不知道怎么解释)，可是我明明授权了Terumx的Root权限了啊?难道是我的syslock没有解?当然也不是…总是上传再clone肯定不是办法，后来我又想出了一个办法，使用cp与mv命令把其他文件拷贝到指定目录中，后来就一直用了…<br><br><strong>6月21日更新</strong><br><br>因为我的Termux出了点问题，导致命令无法使用，于是我清除了数据，再次搭建博客时经过几小时无果<br><br>然后没有办法的我只能认为是miui系统问题导致的权限不完整，说干就干，没想到养老一年的我又走上了不归路，刷了Havoc-os，不得不说类原生系统开机画面是真好康!而且使用非常舒适!偏题了，咳咳…<br>没想到这问题就解决了，也许你不明白我在说什么，那么恭喜你没有遇到这个问题。<br><br><br><strong>2.无法使用hexo命令</strong></p>
 <p><pre><code class="报错"><br>Usage: hexo &lt; command &gt;<br></code></pre><br>这也是个非常让人头疼的问题<br>起先是根据某度上的回答，又搭了一遍，这一搭还差点把我博客搞没了，气死(主要是手残)<br>后来再研究，说是因为hexo s命令在某个版本被独立出来了，使用命令</p>
 <p><pre><code class="Hexo"><br>npm install hexo-server –save #安装hexo服务<br></code></pre><br><br><br><strong>3.文章代码问题</strong><br>在写Html CSS代码时请使用两个```号把两边括住，不要使用pre加code标签，不然你会死很惨，别问我是怎么知道的<br><br></p>
 <h2 id="完结"><a href="#完结" class="headerlink" title="完结"></a>完结</h2><p>好啦，我写的已经够多了，相信不会让你失望<br>这篇文章真是花了我大量的时间和心血，点一下下方的红色按钮，请我吃包辣条也不错</p>
@@ -634,7 +633,7 @@ margin-bottom: 5px;
     </div>
     <div class="footer-device">
     <p style="font-family: 'Ubuntu', sans-serif;">
-        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Github Pages<br>The entire site has a total of <span class="post-count">5k</span> words<br>备案:备你🐴的案</a>
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Github Pages<br>The entire site has a total of <span class="post-count">5.3k</span> words<br>备案:备你🐴的案</a>
         </span>
       </p>
     </div>
