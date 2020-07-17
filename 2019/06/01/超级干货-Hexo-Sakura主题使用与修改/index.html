@@ -299,10 +299,11 @@
 </blockquote>
 <p>话不多说，下面开始我们的教程</p>
 <p><strong>注: 这篇教程主要是针对Android，但是命令可以通用，如有错误还请指正</strong><br><br></p>
-<h2 id="Hexo博客搭建"><a href="#Hexo博客搭建" class="headerlink" title="Hexo博客搭建"></a>Hexo博客搭建</h2><p><strong>1.安装Termux(如果你是PC用户，请跳转到第二个环节)</strong><br>打开后会下载数据，请配合科学上网</p>
-<p>忘记了非常重要的事情，部分命令需用权限运行<br>2020.4.30日补充</p>
+<h2 id="Hexo博客搭建"><a href="#Hexo博客搭建" class="headerlink" title="Hexo博客搭建"></a>Hexo博客搭建</h2><p><strong>1.安装Termux(如果你是PC用户，请跳转到第二个环节)</strong><br>打开后会下载数据，请配合科学上网<br>可以更新并安装一下软件包<br>输入su获取权限</p>
+<p><strong>忘记了非常重要的事情，部分命令需用权限运行</strong><br><strong>2020.4.30日补充</strong></p>
 <pre><code>输入tsu并回车
 没有安装的根据提示安装
+使用hexo命令前需输入一次
 </code></pre><p><strong>2.注册Github(有的话请跳到命令处)</strong><br>注册环节也可能会用到科学上网，并New一个仓库，仓库名 你的Github名字.github.io<br><strong>3.配置环境&amp;安装软件包</strong></p>
 <pre><code>pkg install git #安装Git
 pkg install nodejs-lts #配置nodejs环境
@@ -319,10 +320,7 @@ ssh-keygen -t rsa -C &quot;你注册Gayhub用的邮箱&quot;
 如果你是PC，找到你新建那个文件的目录就行了
 ssh -T git@github.com #如果出现你的名字便添加SSH成功
 npm install --save hexo-deployer-git #安装上传博客工具
-出现报错的话，可以试下
-pkg install coreutils
-然后再使用前一个命令
-或者换源
+无法安装成功的话可以换源
 完成后
 hexo s #本地启动博客，在浏览器中输入http://localhsot:4000 即可进入博客
 如果出现端口占用
@@ -486,7 +484,7 @@ margin-bottom: 5px;
 <p><pre><code class="报错"><br>events.js:174<br></code></pre><br>在博客目录内放进了文件，导致hexo s博客无法启动，原因是hexo没有权限打开博客目录内的文件，于是乎我按照其他正常文件的权限修改为777，结果还是一样，这个玩意非常迷，与Termux的文件权限问题有关(这里我并不知道怎么解释)，可是我明明授权了Terumx的Root权限了啊?难道是我的syslock没有解?当然也不是…总是上传再clone肯定不是办法，后来我又想出了一个办法，使用cp与mv命令把其他文件拷贝到指定目录中，后来就一直用了…<br><br><strong>6月21日更新</strong><br><br>因为我的Termux出了点问题，导致命令无法使用，于是我清除了数据，再次搭建博客时经过几小时无果<br><br>然后没有办法的我只能认为是miui系统问题导致的权限不完整，说干就干，没想到养老一年的我又走上了不归路，刷了Havoc-os，不得不说类原生系统开机画面是真好康!而且使用非常舒适!偏题了，咳咳…<br>没想到这问题就解决了，也许你不明白我在说什么，那么恭喜你没有遇到这个问题。<br><br><br><strong>2.无法使用hexo命令</strong></p>
 <p><pre><code class="报错"><br>Usage: hexo &lt; command &gt;<br></code></pre><br>这也是个非常让人头疼的问题<br>起先是根据某度上的回答，又搭了一遍，这一搭还差点把我博客搞没了，气死(主要是手残)<br>后来再研究，说是因为hexo s命令在某个版本被独立出来了，使用命令</p>
 <p><pre><code class="Hexo"><br>npm install hexo-server –save #安装hexo服务<br></code></pre><br><br><br><strong>3.文章代码问题</strong><br>在写Html CSS代码时请使用两个```号把两边括住，不要使用pre加code标签，不然你会死很惨，别问我是怎么知道的<br><br></p>
-<h2 id="完结"><a href="#完结" class="headerlink" title="完结"></a>完结</h2><p>好啦，我写的已经够多了，相信不会让你失望<br>这篇文章真是花了我大量的时间和心血，点一下下方的红色按钮，请我吃包辣条也不错</p>
+<h2 id="完结"><a href="#完结" class="headerlink" title="完结"></a>完结</h2><p>好啦，我写的已经够多了，相信不会让你失望</p>
 <p><strong>再次声明，原创文章，转载请注明本文链接!</strong></p>
 
         </div>
