@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mirai.club/"/>
-  <updated>2019-06-22T08:00:45.043Z</updated>
+  <updated>2020-07-30T01:50:50.869Z</updated>
   <id>https://mirai.club/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于Hexo-Luster主题的开发</title>
+    <link href="https://mirai.club/2020/07/30/%E5%85%B3%E4%BA%8EHexo-Luster%E4%B8%BB%E9%A2%98%E7%9A%84%E5%BC%80%E5%8F%91/"/>
+    <id>https://mirai.club/2020/07/30/关于Hexo-Luster主题的开发/</id>
+    <published>2020-07-30T01:35:11.000Z</published>
+    <updated>2020-07-30T01:50:50.869Z</updated>
+    
+    <content type="html"><![CDATA[<p>没错，我又回来了！由于高考备考已经一年多都没有发过文章了<em>(:з)∠)</em>，这次就来搞个大新闻<br>项目在7月20号开坑，但是本人比较完美主义，对主题的设计就很头疼，而且近来也比较忙碌（本文章可以看出…好吧其实就是懒….）<br>总之离主题的完成还要等一段时间（新建文件夹），而且后续还需要继续修改优化，但是我相信Luster主题不会让你失望的![狗头]</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;没错，我又回来了！由于高考备考已经一年多都没有发过文章了&lt;em&gt;(:з)∠)&lt;/em&gt;，这次就来搞个大新闻&lt;br&gt;项目在7月20号开坑，但是本人比较完美主义，对主题的设计就很头疼，而且近来也比较忙碌（本文章可以看出…好吧其实就是懒….）&lt;br&gt;总之离主题的完成还要等一段时间
+        
+      
+    
+    </summary>
+    
+      <category term="日常" scheme="https://mirai.club/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>关于</title>
